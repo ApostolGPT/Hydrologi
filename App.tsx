@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ViewState, WaterEntry } from './types';
-import { EntryForm } from './components/EntryForm';
-import { DataList } from './components/DataList';
-import { StatsChart } from './components/StatsChart';
-import { analyzeWaterData } from './services/geminiService';
-import { 
-  Droplet, 
-  List, 
-  BarChart3, 
-  BrainCircuit, 
-  Waves,
-  Plus
-} from 'lucide-react';
+import { EntryForm } from './EntryForm';
+import { DataList } from './DataList';
+import { StatsChart } from './StatsChart';
+import { analyzeWaterData } from './geminiService';
+import { List, BarChart3, BrainCircuit, Waves, Plus } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
 const STORAGE_KEY = 'hydrolog_data';

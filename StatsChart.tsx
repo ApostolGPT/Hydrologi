@@ -9,7 +9,7 @@ import {
   Legend,
   ResponsiveContainer
 } from 'recharts';
-import { WaterEntry } from '../types';
+import { WaterEntry } from './types';
 
 interface StatsChartProps {
   data: WaterEntry[];

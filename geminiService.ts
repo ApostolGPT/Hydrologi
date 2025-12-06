@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { WaterEntry } from "../types";
+import { WaterEntry } from "./types";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

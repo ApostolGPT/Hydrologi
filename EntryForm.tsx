@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { WaterEntry } from '../types';
+import { WaterEntry } from './types';
 import { v4 as uuidv4 } from 'uuid';
 import { Plus, Save, MapPin, Thermometer, Droplet, Activity, Zap, CloudSun, Wind, Gauge } from 'lucide-react';
 
