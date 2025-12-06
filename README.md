@@ -10,14 +10,29 @@ View your app in AI Studio: https://ai.studio/apps/drive/1nx62_rrouy8XMy5r7zzw06
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:**  Node.js 20+
 
 1. Install dependencies:
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. Run the app on your network so mobile devices can open it:
+   `npm run dev -- --host --port 4173`
+4. Open http://localhost:4173 (or your host IP on mobile) to test.
+
+## Run with Docker (no local Node.js required)
+
+If you don't have Node.js available, build and run the bundled image instead:
+
+```bash
+# Build the image
+DOCKER_BUILDKIT=1 docker build -t hydrologi:local .
+
+# Run and expose the app on port 4173
+# (Add --network host on Linux if you prefer host networking)
+docker run --rm -p 4173:4173 hydrologi:local
+```
+
+Then open http://localhost:4173 (or the host IP on your phone) to load the app offline-ready.
 
 ## Offline & installable usage
 
