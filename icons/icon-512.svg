@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="HydroLog">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0ea5e9" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="64" fill="url(#g)" />
+  <g filter="url(#shadow)">
+    <path d="M256 68c-70 86-118 155-118 214 0 62.1 51.2 112 113.9 112 62.8 0 120.1-43.8 120.1-109.2C372 221.6 320.3 151.7 256 68Zm0 147.7c26.3 33.5 42.9 62.7 42.9 82.1 0 23.6-19.3 42.9-42.9 42.9s-42.9-19.3-42.9-42.9c0-19.4 16.6-48.6 42.9-82.1Z" fill="#fff" />
+    <circle cx="256" cy="362" r="22" fill="#cffafe" />
+  </g>
+</svg>
