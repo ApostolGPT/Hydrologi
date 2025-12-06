@@ -1,6 +1,6 @@
 import React from 'react';
 import * as XLSX from 'xlsx';
-import { WaterEntry } from '../types';
+import { WaterEntry } from './types';
 import { Download, Trash2, FileSpreadsheet, AlertTriangle, CloudSun } from 'lucide-react';
 
 interface DataListProps {
